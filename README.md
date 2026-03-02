@@ -14,7 +14,16 @@ Slackのワークスペース内の対象チャンネルに対して、全チャ
 3. list_channels.pyおよびslack_backup.pyの *SLACK_API_TOKEN*にトークン文字列を書く
 
 
-## 使い方
+## 使い方（２ヶ月目以降）
+
+1. `make get-all`
+
+2. `make copy-new-files`
+   - 手順１は、ローカルにダウンロードされるだけ
+   - この手順２で、Google Driveなど別の場所に新規追加分だけをコピーする
+
+
+## 使い方（初回）
 * ```make channel-list```で、ワークスペースのすべてのチャンネルのリストを取得し、_channels.json_に出力する。
 * ```cp _channels.json_ _target_channels.json```して、target_channels.jsonの中から、バックアップする必要のないチャンネルを削除する。
 * ```make```を実行する。

@@ -38,6 +38,7 @@ def copy_new_files(source_dir, dest_dir, timestamp):
 
     count = 0
     for item in source_path.rglob("*"):
+        # 作成・更新時刻を見て、手元の方がより新しければ、リモートにコピーする
         if item.is_file() or item.is_dir():
             modified_time = datetime.datetime.fromtimestamp(item.stat().st_mtime)
             created_time = datetime.datetime.fromtimestamp(item.stat().st_ctime)
