@@ -25,7 +25,7 @@ Slackのワークスペース内の対象チャンネルに対して、全チャ
 
 ## 使い方（初回）
 * ```make channel-list```で、ワークスペースのすべてのチャンネルのリストを取得し、_channels.json_に出力する。
-* ```cp _channels.json_ _target_channels.json```して、target_channels.jsonの中から、バックアップする必要のないチャンネルを削除する。
+* ```cp _channels.json _target_channels.json```して、target_channels.jsonの中から、バックアップする必要のないチャンネルを削除する。
 * ```make```を実行する。
   - histories/の下に、チャンネルごとにディレクトリが作られ、チャットメッセージが月毎にjsonにまとめられる
   - 添付ファイルは、さらに、files/の下に置かれる。

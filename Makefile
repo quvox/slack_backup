@@ -8,6 +8,9 @@ get-all:
 channel-list:
 	. venv/bin/activate && python ./list_channels.py
 
+select-channels:
+	. venv/bin/activate && python ./select_channels.py
+
 copy-new-files:
 	. venv/bin/activate && python ./copy_new_files.py -s ./histories -t /Users/t-kubo/Library/CloudStorage/GoogleDrive-takeshi.kubo@zettant.com/共有ドライブ/情シスG/service_backup/slack
 
